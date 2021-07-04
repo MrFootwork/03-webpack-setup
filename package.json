@@ -1,20 +1,23 @@
 {
-  "name": "03-webpack-setup",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "main": "index.js",
-  "dependencies": {
-    "lodash": "^4.17.21"
-  },
-  "devDependencies": {
-    "webpack": "^5.42.0",
-    "webpack-cli": "^4.7.2"
-  },
-  "description": ""
+	"name": "03-webpack-setup",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "npx webpack --config webpack.config.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"main": "index.js",
+	"dependencies": {
+		"lodash": "^4.17.21"
+	},
+	"devDependencies": {
+		"css-loader": "^5.2.6",
+		"style-loader": "^3.0.0",
+		"webpack": "^5.42.0",
+		"webpack-cli": "^4.7.2"
+	},
+	"description": ""
 }
