@@ -127,6 +127,39 @@ eval("module.exports = {\"note\":{\"to\":[\"Mary\"],\"from\":[\"John\"],\"headin
 
 /***/ }),
 
+/***/ "./src/data.json5":
+/*!************************!*\
+  !*** ./src/data.json5 ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+eval("module.exports = JSON.parse('{\"title\":\"JSON5 Example\",\"owner\":{\"name\":\"Tom Preston-Werner\",\"organization\":\"GitHub\",\"bio\":\"GitHub Cofounder & CEO\\\\nLikes tater tots and beer.\",\"dob\":\"1979-05-27T07:32:00.000Z\"}}');\n\n//# sourceURL=webpack://03-webpack-setup/./src/data.json5?");
+
+/***/ }),
+
+/***/ "./src/data.toml":
+/*!***********************!*\
+  !*** ./src/data.toml ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+eval("module.exports = JSON.parse('{\"title\":\"TOML Example\",\"owner\":{\"name\":\"Tom Preston-Werner\",\"organization\":\"GitHub\",\"bio\":\"GitHub Cofounder & CEO\\\\nLikes tater tots and beer.\",\"dob\":\"1979-05-27T07:32:00.000Z\"}}');\n\n//# sourceURL=webpack://03-webpack-setup/./src/data.toml?");
+
+/***/ }),
+
+/***/ "./src/data.yaml":
+/*!***********************!*\
+  !*** ./src/data.yaml ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+eval("module.exports = JSON.parse('{\"title\":\"YAML Example\",\"owner\":{\"name\":\"Tom Preston-Werner\",\"organization\":\"GitHub\",\"bio\":\"GitHub Cofounder & CEO\\\\nLikes tater tots and beer.\",\"dob\":\"1979-05-27T07:32:00.000Z\"}}');\n\n//# sourceURL=webpack://03-webpack-setup/./src/data.yaml?");
+
+/***/ }),
+
 /***/ "./src/icon.jpg":
 /*!**********************!*\
   !*** ./src/icon.jpg ***!
@@ -145,7 +178,7 @@ eval("module.exports = __webpack_require__.p + \"9e0cf243ab41a1cfb5ca.jpg\";\n\n
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _icon_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./icon.jpg */ \"./src/icon.jpg\");\n/* harmony import */ var _data_xml__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data.xml */ \"./src/data.xml\");\n/* harmony import */ var _data_xml__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_data_xml__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _data_csv__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./data.csv */ \"./src/data.csv\");\n/* harmony import */ var _data_csv__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_data_csv__WEBPACK_IMPORTED_MODULE_4__);\n\r\n\r\n\r\n\r\n\r\n\r\nfunction component() {\r\n\tconst element = document.createElement('div')\r\n\r\n\t// Lodash, nor imported by this script\r\n\telement.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default().join(['Hello', 'webpack'], ' ')\r\n\telement.classList.add('hello')\r\n\r\n\t// Add the image to our existing div.\r\n\tconst myIcon = new Image()\r\n\tmyIcon.src = _icon_jpg__WEBPACK_IMPORTED_MODULE_2__\r\n\r\n\telement.appendChild(myIcon)\r\n\r\n\tconsole.log((_data_xml__WEBPACK_IMPORTED_MODULE_3___default()))\r\n\tconsole.log((_data_csv__WEBPACK_IMPORTED_MODULE_4___default()))\r\n\r\n\treturn element\r\n}\r\n\r\ndocument.body.appendChild(component())\r\n//TODO don't forget to install\r\n//npm install --save-dev style-loader css-loader\r\n//npm install --save-dev csv-loader xml-loader\r\n\n\n//# sourceURL=webpack://03-webpack-setup/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _icon_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./icon.jpg */ \"./src/icon.jpg\");\n/* harmony import */ var _data_xml__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data.xml */ \"./src/data.xml\");\n/* harmony import */ var _data_xml__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_data_xml__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _data_csv__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./data.csv */ \"./src/data.csv\");\n/* harmony import */ var _data_csv__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_data_csv__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _data_toml__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./data.toml */ \"./src/data.toml\");\n/* harmony import */ var _data_yaml__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./data.yaml */ \"./src/data.yaml\");\n/* harmony import */ var _data_json5__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./data.json5 */ \"./src/data.json5\");\n\r\n\r\n\r\n//works only for default imports!\r\n\r\n\r\n\r\n\r\n\r\n\r\nconsole.log(_data_toml__WEBPACK_IMPORTED_MODULE_5__.title) //output 'toml Example'\r\nconsole.log(_data_toml__WEBPACK_IMPORTED_MODULE_5__.owner.name) //output 'Tom Preston-Werner\r\nconsole.log(_data_yaml__WEBPACK_IMPORTED_MODULE_6__.title) //output 'yaml Example'\r\nconsole.log(_data_yaml__WEBPACK_IMPORTED_MODULE_6__.owner.name) //output 'Tom Preston-Werner\r\nconsole.log(_data_json5__WEBPACK_IMPORTED_MODULE_7__.title) //output 'json5 Example'\r\nconsole.log(_data_json5__WEBPACK_IMPORTED_MODULE_7__.owner.name) //output 'Tom Preston-Werner\r\n\r\nfunction component() {\r\n\tconst element = document.createElement('div')\r\n\r\n\t// Lodash, nor imported by this script\r\n\telement.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default().join(['Hello', 'webpack'], ' ')\r\n\telement.classList.add('hello')\r\n\r\n\t// Add the image to our existing div.\r\n\tconst myIcon = new Image()\r\n\tmyIcon.src = _icon_jpg__WEBPACK_IMPORTED_MODULE_2__\r\n\r\n\telement.appendChild(myIcon)\r\n\r\n\tconsole.log((_data_xml__WEBPACK_IMPORTED_MODULE_3___default()))\r\n\tconsole.log((_data_csv__WEBPACK_IMPORTED_MODULE_4___default()))\r\n\r\n\treturn element\r\n}\r\n\r\ndocument.body.appendChild(component())\r\n//TODO don't forget to install\r\n//npm install --save-dev style-loader css-loader\r\n//npm install --save-dev csv-loader xml-loader\r\n\n\n//# sourceURL=webpack://03-webpack-setup/./src/index.js?");
 
 /***/ }),
 

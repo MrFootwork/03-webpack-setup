@@ -4,6 +4,16 @@ import Icon from './icon.jpg'
 //works only for default imports!
 import Data from './data.xml'
 import Notes from './data.csv'
+import toml from './data.toml'
+import yaml from './data.yaml'
+import json5 from './data.json5'
+
+console.log(toml.title) //output 'toml Example'
+console.log(toml.owner.name) //output 'Tom Preston-Werner
+console.log(yaml.title) //output 'yaml Example'
+console.log(yaml.owner.name) //output 'Tom Preston-Werner
+console.log(json5.title) //output 'json5 Example'
+console.log(json5.owner.name) //output 'Tom Preston-Werner
 
 function component() {
 	const element = document.createElement('div')
