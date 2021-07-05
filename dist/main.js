@@ -42,6 +42,16 @@ eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // 
 
 /***/ }),
 
+/***/ "./src/data.csv":
+/*!**********************!*\
+  !*** ./src/data.csv ***!
+  \**********************/
+/***/ ((module) => {
+
+eval("module.exports = [[\"to\",\"from\",\"heading\",\"body\"],[\"Mary\",\"John\",\"Reminder\",\"Call Cindy on Tuesday\"],[\"Zoe\",\"Bill\",\"Reminder\",\"Buy orange juice\"],[\"Autumn\",\"Lindsey\",\"Letter\",\"I miss you\"]]\n\n//# sourceURL=webpack://03-webpack-setup/./src/data.csv?");
+
+/***/ }),
+
 /***/ "./node_modules/lodash/lodash.js":
 /*!***************************************!*\
   !*** ./node_modules/lodash/lodash.js ***!
@@ -107,6 +117,16 @@ eval("\n\n/* istanbul ignore next  */\nfunction apply(style, options, obj) {\n  
 
 /***/ }),
 
+/***/ "./src/data.xml":
+/*!**********************!*\
+  !*** ./src/data.xml ***!
+  \**********************/
+/***/ ((module) => {
+
+eval("module.exports = {\"note\":{\"to\":[\"Mary\"],\"from\":[\"John\"],\"heading\":[\"Reminder\"],\"body\":[\"Call Cindy on Tuesday\"]}}\n\n//# sourceURL=webpack://03-webpack-setup/./src/data.xml?");
+
+/***/ }),
+
 /***/ "./src/icon.jpg":
 /*!**********************!*\
   !*** ./src/icon.jpg ***!
@@ -125,7 +145,7 @@ eval("module.exports = __webpack_require__.p + \"9e0cf243ab41a1cfb5ca.jpg\";\n\n
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _icon_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./icon.jpg */ \"./src/icon.jpg\");\n\r\n\r\n\r\n\r\nfunction component() {\r\n\tconst element = document.createElement('div')\r\n\r\n\t// Lodash, nor imported by this script\r\n\telement.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default().join(['Hello', 'webpack'], ' ')\r\n\telement.classList.add('hello')\r\n\r\n\t// Add the image to our existing div.\r\n\tconst myIcon = new Image()\r\n\tmyIcon.src = _icon_jpg__WEBPACK_IMPORTED_MODULE_2__\r\n\r\n\telement.appendChild(myIcon)\r\n\r\n\treturn element\r\n}\r\n\r\ndocument.body.appendChild(component())\r\n//TODO don't forget to install\r\n//npm install --save-dev style-loader css-loader\r\n\n\n//# sourceURL=webpack://03-webpack-setup/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _icon_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./icon.jpg */ \"./src/icon.jpg\");\n/* harmony import */ var _data_xml__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data.xml */ \"./src/data.xml\");\n/* harmony import */ var _data_xml__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_data_xml__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _data_csv__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./data.csv */ \"./src/data.csv\");\n/* harmony import */ var _data_csv__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_data_csv__WEBPACK_IMPORTED_MODULE_4__);\n\r\n\r\n\r\n\r\n\r\n\r\nfunction component() {\r\n\tconst element = document.createElement('div')\r\n\r\n\t// Lodash, nor imported by this script\r\n\telement.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default().join(['Hello', 'webpack'], ' ')\r\n\telement.classList.add('hello')\r\n\r\n\t// Add the image to our existing div.\r\n\tconst myIcon = new Image()\r\n\tmyIcon.src = _icon_jpg__WEBPACK_IMPORTED_MODULE_2__\r\n\r\n\telement.appendChild(myIcon)\r\n\r\n\tconsole.log((_data_xml__WEBPACK_IMPORTED_MODULE_3___default()))\r\n\tconsole.log((_data_csv__WEBPACK_IMPORTED_MODULE_4___default()))\r\n\r\n\treturn element\r\n}\r\n\r\ndocument.body.appendChild(component())\r\n//TODO don't forget to install\r\n//npm install --save-dev style-loader css-loader\r\n//npm install --save-dev csv-loader xml-loader\r\n\n\n//# sourceURL=webpack://03-webpack-setup/./src/index.js?");
 
 /***/ }),
 
